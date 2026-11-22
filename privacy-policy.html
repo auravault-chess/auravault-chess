@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — AuraVault Chess</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      background: #0b1021;
+      color: #e6ebf5;
+      line-height: 1.7;
+    }
+    .wrap {
+      max-width: 820px;
+      margin: 40px auto;
+      padding: 28px;
+      background: #141c36;
+      border: 1px solid #2b375f;
+      border-radius: 16px;
+    }
+    h1, h2 { color: #f3c864; }
+    a { color: #f3c864; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 8px; }
+    .meta { color: #9aa7c7; font-size: 0.95rem; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <p><a href="index.html">&larr; Back to AuraVault Chess</a></p>
+    <h1>Privacy Policy</h1>
+    <p class="meta">App: AuraVault Chess (<code>com.auravaultchess</code>) &bull; Last Updated: November 2026</p>
+
+    <h2>1. Information We Collect</h2>
+    <p>AuraVault Chess minimizes data collection so you can focus on the board. Depending on how you use the app, the following information may be processed:</p>
+    <ul>
+      <li><strong>Guest Account Mode:</strong> Generates a local session identifier on your device. Ratings, match history, and preferences remain stored locally on your device.</li>
+      <li><strong>Google Sign-In / Email Account (Optional):</strong> Uses Firebase Authentication and Google Credential Manager to verify your account, receiving your basic user ID, display name, and email address (your email is never shown publicly).</li>
+      <li><strong>Profile &amp; Public Leaderboard Projection:</strong> For authenticated accounts, your chosen avatar symbol, display name, title badge, rating, win/loss/draw totals, win streak, and favored opening may sync to Firebase Firestore under your user ID with zero private contact details exposed.</li>
+    </ul>
+
+    <h2>2. How We Use Your Data</h2>
+    <ul>
+      <li>Operate core gameplay features, Glicko-1 ratings, Daily Tasks, and PGN match archives.</li>
+      <li>Sync profile preferences and public leaderboard standings across authenticated sessions.</li>
+      <li><strong>Automated Opponent Fallback:</strong> When no real player match is available, pair you with a skill-calibrated in-game AI opponent without sharing personal identity information.</li>
+    </ul>
+
+    <h2>3. Storage, Caching &amp; Security</h2>
+    <p>Local game records reside in private Android app storage. Cloud-synced attributes are protected via Firebase Authentication and Firestore security rules. Global leaderboard entries are cached locally on your device for 1 hour and win uploads are throttled to at most once per hour to protect battery life and minimize network usage. We never sell personal data.</p>
+
+    <h2>4. Advertising &amp; Diagnostics (If Enabled)</h2>
+    <p>Future versions of the app may display optional Rewarded or Interstitial ads via third-party ad networks (such as Google AdMob) and collect anonymous crash diagnostics (such as Firebase Crashlytics). Where required by law (e.g., EEA/UK), a privacy consent prompt will be presented before serving personalized ads.</p>
+
+    <h2>5. Account Deletion &amp; Data Control</h2>
+    <p>You may play in Guest Mode without creating an account, or sign out and permanently delete your cloud account, profile, and leaderboard entry at any time inside the app via <strong>Profile &rarr; Delete Account</strong>.</p>
+    <p>If you no longer have access to the device and want your cloud data deleted, email us at <strong>[YOUR_SUPPORT_EMAIL]</strong> with your account email.</p>
+  </div>
+</body>
+</html>
