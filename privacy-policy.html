@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — AuraVault Chess</title>
+  <meta name="description" content="Privacy Policy and Data Deletion information for AuraVault Chess." />
+  <style>
+    :root {
+      --bg: #080d1a;
+      --surface: #11192e;
+      --border: #253459;
+      --gold-light: #f3d578;
+      --text: #f3f6fc;
+      --muted: #a6b4d0;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: radial-gradient(circle at top, #15213e 0%, var(--bg) 60%);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    .container { max-width: 880px; margin: 0 auto; padding: 28px 20px 56px; }
+    nav {
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+      gap: 12px; padding-bottom: 20px; border-bottom: 1px solid var(--border); margin-bottom: 28px;
+    }
+    .brand { font-size: 1.25rem; font-weight: 700; letter-spacing: 0.06em; color: var(--gold-light); text-decoration: none; }
+    .nav-links { display: flex; flex-wrap: wrap; gap: 18px; }
+    .nav-links a { color: var(--muted); text-decoration: none; font-size: 0.95rem; font-weight: 500; }
+    .nav-links a:hover, .nav-links a.active { color: var(--gold-light); }
+    h1 { font-size: 1.9rem; color: #fff; margin-bottom: 6px; }
+    .updated { color: var(--gold-light); font-size: 0.9rem; margin-bottom: 24px; }
+    section {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 14px; padding: 22px; margin-bottom: 16px;
+    }
+    h2 { font-size: 1.15rem; color: var(--gold-light); margin-bottom: 10px; }
+    p, li { color: var(--muted); font-size: 0.96rem; }
+    p + p, ul { margin-top: 8px; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+    strong { color: var(--text); }
+    a.mail { color: var(--gold-light); font-weight: 600; text-decoration: none; }
+    a.mail:hover { text-decoration: underline; }
+    footer {
+      margin-top: 32px; padding-top: 20px; border-top: 1px solid var(--border);
+      color: var(--muted); font-size: 0.88rem; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <a class="brand" href="index.html">&#9812; AURAVAULT CHESS</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a class="active" href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </div>
+    </nav>
+
+    <h1>Privacy Policy</h1>
+    <p class="updated">Effective Date: November 2026 &bull; App: AuraVault Chess</p>
+
+    <section>
+      <h2>1. Information We Collect</h2>
+      <p>AuraVault Chess minimizes data collection so you can focus on the board. Depending on how you use the app, we process:</p>
+      <ul>
+        <li><strong>Guest Account Mode:</strong> Generates a local session identifier on your device. Your ratings, match archives, and preferences remain stored locally on your device.</li>
+        <li><strong>Google Sign-In / Email Account (Optional):</strong> Uses Firebase Authentication to verify your account, receiving your user ID, display name, and email address (never shared publicly).</li>
+        <li><strong>Profile &amp; Public Leaderboard Data:</strong> Authenticated players' display name, title badge, chosen avatar symbol, rating, win/loss/draw totals, win streak, and favored opening may be stored in Cloud Firestore. Email addresses and private contact details are never exposed on the public leaderboard.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>2. How We Use Your Data</h2>
+      <ul>
+        <li>Operate core chess gameplay, Glicko-1 ratings, Daily Tasks, and progression records.</li>
+        <li>Preserve PGN match history for your personal review and export.</li>
+        <li>Sync your avatar and public leaderboard standings across authenticated sessions.</li>
+        <li><strong>Automated AI Fallback:</strong> When no live human opponent is queued, pair you with a skill-calibrated in-game AI bot without sharing personal identity data.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. Caching, Crash Diagnostics &amp; Security</h2>
+      <p>
+        Local match records stay inside private Android app storage. Cloud-synced profile and leaderboard
+        data is protected by Firebase Authentication and Firestore Security Rules.
+      </p>
+      <p>
+        To reduce mobile network and battery usage, global leaderboard standings are cached locally on your
+        device for <strong>1 hour</strong> and rated win leaderboard uploads are throttled to at most once every <strong>1 hour</strong>.
+      </p>
+      <p>
+        <strong>Firebase Crashlytics:</strong> We use Google Firebase Crashlytics to collect anonymous crash logs,
+        stack traces, and basic device state diagnostics (with no personal contact info) strictly to fix bugs
+        and improve app stability.
+      </p>
+      <p>We do <strong>not</strong> sell your personal data or share personal data with third-party data brokers.</p>
+    </section>
+
+    <section>
+      <h2>4. Third-Party Services</h2>
+      <p>AuraVault Chess uses the following Google/Firebase infrastructure services:</p>
+      <ul>
+        <li>Google Firebase Authentication (optional account login)</li>
+        <li>Google Cloud Firestore (authenticated profile &amp; leaderboard storage)</li>
+        <li>Google Firebase Crashlytics (anonymous crash diagnostics)</li>
+      </ul>
+    </section>
+
+    <section id="account-deletion">
+      <h2>5. Your Rights &amp; Account / Data Deletion</h2>
+      <p>You can play anytime in Guest Mode without creating an account.</p>
+      <p>
+        <strong>In-App Deletion:</strong> Authenticated users can permanently delete their account, profile record,
+        and public leaderboard entry immediately inside the app via
+        <strong>Profile &rarr; Delete Account &amp; Data</strong>.
+      </p>
+      <p>
+        <strong>Email Deletion Request:</strong> If you no longer have access to the device or need manual assistance
+        deleting your cloud records, email <a class="mail" href="mailto:auravaultchess@gmail.com">auravaultchess@gmail.com</a>
+        from your registered email address with the subject <em>"Account Deletion Request - AuraVault Chess"</em>,
+        and your associated Firebase Auth and Firestore records will be removed.
+      </p>
+    </section>
+
+    <section>
+      <h2>6. Children's Privacy</h2>
+      <p>
+        AuraVault Chess does not knowingly collect personal information from children under 13 (or the minimum
+        digital consent age in your jurisdiction) without verifiable parental consent. If you believe a child
+        has provided personal data, please contact us for immediate deletion.
+      </p>
+    </section>
+
+    <section>
+      <h2>7. Privacy Contact</h2>
+      <p>
+        For privacy inquiries, data access requests, or deletion assistance, contact the AuraVault Chess developer at:
+        <a class="mail" href="mailto:auravaultchess@gmail.com">auravaultchess@gmail.com</a>
+      </p>
+    </section>
+
+    <footer>
+      <span>AuraVault Chess &bull; Privacy Policy</span>
+      <span>Contact: <a class="mail" href="mailto:auravaultchess@gmail.com">auravaultchess@gmail.com</a></span>
+    </footer>
+  </div>
+</body>
+</html>
